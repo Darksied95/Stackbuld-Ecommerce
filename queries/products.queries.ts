@@ -11,7 +11,7 @@ export function useGetProductById(id: string) {
 }
 
 export function useGetProducts() {
-    return useQuery<{ products: IProduct[] }>({
+    return useQuery<IProduct[]>({
         queryKey: ['products'],
         queryFn: getProducts,
     })

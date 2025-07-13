@@ -8,7 +8,7 @@ export const getProducts = async () => {
     }
     const products: IProduct[] = await res.json();
 
-    return { products }
+    return products
 }
 
 export const getProductById = async (id: string) => {
