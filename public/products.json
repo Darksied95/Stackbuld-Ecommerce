@@ -1,0 +1,146 @@
+[
+    {
+        "id": "p001",
+        "name": "Sony WF-1000XM5 Earbuds (Smoky Pink)",
+        "price_naira": 350000,
+        "image": {
+            "url": "https://electronics.sony.com/assets/img/product/wf1000xm5-p/SM/feature1.jpg",
+            "alt": "Sony WF-1000XM5 wireless earbuds smoky pink"
+        },
+        "description": "Flagship noise-cancelling true wireless earbuds with Dynamic Driver X, Bluetooth LDAC support, up to 8 h per charge (24 h with case) and IPX4 splash resistance.",
+        "category": "Electronics",
+        "in_stock": true
+    },
+    {
+        "id": "p002",
+        "name": "Philips Air Fryer 4.1 L Mid-End HD9220/20",
+        "price_naira": 86200,
+        "image": {
+            "url": "https://kara.com.ng/philips-air-fryer-mid-end-black-hd-9220-20",
+            "alt": "Philips Air Fryer HD9220/20 4.1L black"
+        },
+        "description": "Rapid Air technology, 1400 W, manual time and temperature control, dishwasher-safe parts.",
+        "category": "Home Appliances",
+        "in_stock": true
+    },
+    {
+        "id": "p003",
+        "name": "Philips Air Fryer 6.2 L 1000 Series NA130/09",
+        "price_naira": 146739,
+        "image": {
+            "url": "https://www.konga.com/media/catalog/product/philips_na130_09.jpg",
+            "alt": "Philips Air Fryer 6.2L 1000 Series NA130/09"
+        },
+        "description": "Larger 6.2 L capacity air fryer with Rapid Air tech and digital controls.",
+        "category": "Home Appliances",
+        "in_stock": true
+    },
+    {
+        "id": "p004",
+        "name": "Philips Premium Airfryer XXL HD9650/96",
+        "price_naira": 507128,
+        "image": {
+            "url": "https://www.u-buy.com.ng/media/catalog/product/philips_hd9650_96_xxl.jpg",
+            "alt": "Philips Premium Airfryer XXL HD9650/96 black"
+        },
+        "description": "Fat-removal dialysis feature, Twin TurboStar, family-size XXL capacity.",
+        "category": "Home Appliances",
+        "in_stock": true
+    },
+    {
+        "id": "p005",
+        "name": "Sony WF-1000XM5 Earbuds (Black)",
+        "price_naira": 350000,
+        "image": {
+            "url": "https://electronics.sony.com/assets/img/product/wf1000xm5-b/BL/feature1.jpg",
+            "alt": "Sony WF-1000XM5 wireless earbuds in black"
+        },
+        "description": "Same flagship specs as smoky pink, in black colour option.",
+        "category": "Electronics",
+        "in_stock": true
+    },
+    {
+        "id": "p006",
+        "name": "Hisense Air Fryer 6.7 L (Model H06AFBS2S3)",
+        "price_naira": 85000,
+        "image": {
+            "url": "https://jiji.ng/photos/hisense-6-7l-air-fryer.jpg",
+            "alt": "Hisense 6.7L dual-basket air fryer black"
+        },
+        "description": "Dual-basket 6.7 L air fryer popular in Nigeria listings (Jiji).",
+        "category": "Home Appliances",
+        "in_stock": true
+    },
+    {
+        "id": "p007",
+        "name": "Polystar PV-K5AFM Air Fryer 5 L",
+        "price_naira": 60000,
+        "image": {
+            "url": "https://jiji.ng/photos/polystar-pv-k5afm-air-fryer.jpg",
+            "alt": "Polystar PV-K5AFM 5L air fryer copper"
+        },
+        "description": "Affordable 5 L air fryer with healthy oil-free cooking.",
+        "category": "Home Appliances",
+        "in_stock": true
+    },
+    {
+        "id": "p008",
+        "name": "Sony WF-C700N Earbuds (Budget ANC)",
+        "price_naira": 120000,
+        "image": {
+            "url": "https://sony.com/content/dam/sony/earbuds/wfc700n/feature.jpg",
+            "alt": "Sony WF-C700N true wireless earbuds black"
+        },
+        "description": "Budget alternative from Sony with ANC, solid sound and value (Tom's Guide highlight) :contentReference[oaicite:1]{index=1}",
+        "category": "Electronics",
+        "in_stock": true
+    },
+    {
+        "id": "p009",
+        "name": "Apple AirPods Pro (2nd Gen)",
+        "price_naira": 250000,
+        "image": {
+            "url": "https://apple.com/v/airpods-pro-2nd/image/overview/feature-gallery_1__fjsr3r3efwym_large_2x.jpg",
+            "alt": "Apple AirPods Pro 2nd generation with case"
+        },
+        "description": "Popular ANC earbuds, seamless iPhone integration, strong all-around pick (Tom's Guide top mention) :contentReference[oaicite:2]{index=2}",
+        "category": "Electronics",
+        "in_stock": true
+    },
+    {
+        "id": "p010",
+        "name": "Bose QuietComfort Ultra Earbuds",
+        "price_naira": 300000,
+        "image": {
+            "url": "https://images.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/quietcomfort-ultra-earbuds/black/overview/quietcomfort-ultra-earbuds-black-top-1.jpg",
+            "alt": "Bose QuietComfort Ultra wireless earbuds black"
+        },
+        "description": "Best-in-class ANC earbuds praised by reviewers for superior noise cancellation (Tom's Guide) :contentReference[oaicite:3]{index=3}",
+        "category": "Electronics",
+        "in_stock": true
+    },
+    {
+        "id": "p011",
+        "name": "Samsung Galaxy Buds 2 Pro",
+        "price_naira": 180000,
+        "image": {
+            "url": "https://www.samsung.com/us/mobile/audio/headphones/galaxy-buds2pro/gallery/galaxy-buds2pro-02.jpg",
+            "alt": "Samsung Galaxy Buds 2 Pro earbuds white"
+        },
+        "description": "High end ANC earbuds for Galaxy users, warm sound and tight integration.",
+        "category": "Electronics",
+        "in_stock": true
+    },
+    {
+        "id": "p012",
+        "name": "Sony WF-1000XM4 Earbuds (Silver)",
+        "price_naira": 280000,
+        "image": {
+            "url": "https://www.amazon.com/images/I/71XXXXXXXX_SX679_.jpg",
+            "alt": "Sony WF-1000XM4 earbuds silver"
+        },
+        "description": "Previous-gen flagship Sony earbuds still popular and often discounted; strong ANC and sound.",
+        "category": "Electronics",
+        "in_stock": true
+    }
+]
