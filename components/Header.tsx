@@ -1,49 +1,72 @@
-import { Search, ShoppingCart } from 'lucide-react';
-import React, { useState } from 'react'
+"use client";
 
-const Header = ({ isScrolled }: { isScrolled: boolean }) => {
+import { SITE_NAME } from '@/constants';
+import { useCartStore } from '@/store/cart.store';
+import { Search, ShoppingCart } from 'lucide-react';
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react'
+
+const Header = () => {
     const [searchQuery, setSearchQuery] = useState('');
+    const itemsInCart = useCartStore(state => state.items);
+
+    useEffect(() => {
+        const cartState = localStorage.getItem('cart-storage');
+        if (cartState) {
+            const parsedCart = JSON.parse(cartState);
+            if (parsedCart.state) {
+                useCartStore.setState(parsedCart.state);
+            }
+        }
+    }, [])
 
     return (
-        <header className={`bg-white shadow-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'shadow-lg' : ''}`}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16">
-                    {/* Logo */}
-                    <div className="flex-shrink-0">
-                        <a href="/" aria-label="Stackbuld homepage">
-                            <span className="p-2 bg-gray-900 flex items-center justify-center">
-                                <span className="text-white font-bold text-sm">SB</span>
-                            </span>
-                        </a>
-                    </div>
-
-                    {/* Search Bar */}
-                    <div className="flex-1 max-w-md mx-8">
-                        <div role="search">
-                            <div className="relative">
-                                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} aria-hidden="true" />
-                                <input
-                                    type="text"
-                                    value={searchQuery}
-                                    onChange={(e) => setSearchQuery(e.target.value)}
-                                    placeholder="Search products..."
-                                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white text-sm"
-                                    aria-label="Search products"
-                                />
-                            </div>
+        <header className="bg-slate-800 text-white px-6 py-4 fixed top-0 right-0 left-0 z-50 transition-all duration-300">
+            <div className="max-w-7xl mx-auto flex items-center justify-between">
+                <div className="flex items-center space-x-2">
+                    <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
+                        <div className="w-6 h-6 bg-slate-800 rounded-sm flex items-center justify-center">
+                            <div className="w-3 h-3 border border-white"></div>
                         </div>
                     </div>
-
-                    {/* Navigation */}
-                    <nav className="flex items-center space-x-4">
-                        <button
-                            className="p-2 text-gray-700 hover:text-gray-900 transition-colors"
-                            aria-label="Shopping cart"
-                        >
-                            <ShoppingCart size={20} />
-                        </button>
-                    </nav>
+                    <Link
+                        href={`/`}
+                        className="text-xl font-semibold tracking-wide"
+                    >
+                        {SITE_NAME}
+                    </Link>
                 </div>
+
+                <div className="flex-1 max-w-md mx-8">
+                    <div role="search">
+                        <div className="relative text-black">
+                            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} aria-hidden="true" />
+                            <input
+                                type="text"
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                placeholder="Search products..."
+                                className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white text-sm"
+                                aria-label="Search products"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <Link
+                    href={`/cart`}
+                    className="flex items-center space-x-4">
+                    <span className="relative">
+                        <ShoppingCart className="w-6 h-6" />
+                        {
+                            itemsInCart.length > 0 && <span className="absolute -top-2 -right-2 bg-amber-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-medium">
+                                {itemsInCart.length}
+                            </span>
+                        }
+                    </span>
+                    <span className="text-sm">NGN</span>
+                </Link>
+
             </div>
         </header>
     )
