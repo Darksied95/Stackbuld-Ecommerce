@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import ReactQueryProvider from "@/libs/ReactQueryProvider";
 import { Toaster } from "sonner";
+import Header from "@/components/Header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <ReactQueryProvider>
           <Toaster richColors position="top-center" />
+          <Header />
           {children}
         </ReactQueryProvider>
       </body>
