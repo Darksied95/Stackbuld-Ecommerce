@@ -63,7 +63,7 @@ const Page = () => {
                     className="w-full group relative flex items-center  justify-center px-8 py-4 bg-gray-800 hover:bg-orange-600 text-white rounded-2xl font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-orange-300 focus:ring-offset-2"
                     aria-label="Go to homepage"
                 >
-                    <Home className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform duration-300" aria-hidden="true" />
+                    <Home className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform duration-300 mb-3" aria-hidden="true" />
                     Go Home
                     <div className="absolute inset-0 rounded-2xl bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 </Link>

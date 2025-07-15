@@ -2,7 +2,7 @@
     {
         "id": "p001",
         "name": "Sony WF-1000XM5 Earbuds (Smoky Pink)",
-        "price_naira": 350000,
+        "price_naira": 35000,
         "image": {
             "url": "/images/sony.avif",
             "alt": "Sony WF-1000XM5 wireless earbuds smoky pink"
@@ -26,7 +26,7 @@
     {
         "id": "p003",
         "name": "Philips Air Fryer 6.2 L 1000 Series NA130/09",
-        "price_naira": 146739,
+        "price_naira": 14000,
         "image": {
             "url": "/images/phillip2.avif",
             "alt": "Philips Air Fryer 6.2L 1000 Series NA130/09"
@@ -38,7 +38,7 @@
     {
         "id": "p004",
         "name": "Philips Premium Airfryer XXL HD9650/96",
-        "price_naira": 507128,
+        "price_naira": 50900,
         "image": {
             "url": "/images/phillip3.jpg",
             "alt": "Philips Premium Airfryer XXL HD9650/96 black"
@@ -50,7 +50,7 @@
     {
         "id": "p005",
         "name": "Sony WF-1000XM5 Earbuds (Black)",
-        "price_naira": 350000,
+        "price_naira": 35000,
         "image": {
             "url": "/images/sony2.jpg",
             "alt": "Sony WF-1000XM5 wireless earbuds in black"
@@ -62,7 +62,7 @@
     {
         "id": "p006",
         "name": "Hisense Air Fryer 6.7 L (Model H06AFBS2S3)",
-        "price_naira": 85000,
+        "price_naira": 12000,
         "image": {
             "url": "/images/hisense.jpeg",
             "alt": "Hisense 6.7L dual-basket air fryer black"
@@ -74,7 +74,7 @@
     {
         "id": "p007",
         "name": "Polystar PV-K5AFM Air Fryer 5 L",
-        "price_naira": 60000,
+        "price_naira": 30000,
         "image": {
             "url": "/images/polystar.webp",
             "alt": "Polystar PV-K5AFM 5L air fryer copper"
@@ -86,7 +86,7 @@
     {
         "id": "p008",
         "name": "Sony WF-C700N Earbuds (Budget ANC)",
-        "price_naira": 120000,
+        "price_naira": 12000,
         "image": {
             "url": "/images/sony3.png",
             "alt": "Sony WF-C700N true wireless earbuds black"
@@ -98,7 +98,7 @@
     {
         "id": "p009",
         "name": "Apple AirPods Pro (2nd Gen)",
-        "price_naira": 250000,
+        "price_naira": 25000,
         "image": {
             "url": "/images/apple.webp",
             "alt": "Apple AirPods Pro 2nd generation with case"
@@ -110,7 +110,7 @@
     {
         "id": "p010",
         "name": "Bose QuietComfort Ultra Earbuds",
-        "price_naira": 300000,
+        "price_naira": 30000,
         "image": {
             "url": "/images/bose.jpg",
             "alt": "Bose QuietComfort Ultra wireless earbuds black"
@@ -122,7 +122,7 @@
     {
         "id": "p011",
         "name": "Samsung Galaxy Buds 2 Pro",
-        "price_naira": 180000,
+        "price_naira": 10000,
         "image": {
             "url": "/images/samsung.jpeg",
             "alt": "Samsung Galaxy Buds 2 Pro earbuds white"
@@ -134,7 +134,7 @@
     {
         "id": "p012",
         "name": "Sony WF-1000XM4 Earbuds (Silver)",
-        "price_naira": 280000,
+        "price_naira": 28000,
         "image": {
             "url": "/images/sony4.jpg",
             "alt": "Sony WF-1000XM4 earbuds silver"

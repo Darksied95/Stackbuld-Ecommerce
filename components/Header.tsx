@@ -38,7 +38,7 @@ const Header = () => {
                     </Link>
                 </div>
 
-                <div className="flex-1 max-w-md mx-8">
+                <div className="hidden md:block flex-1 max-w-md mx-8">
                     <div role="search">
                         <div className="relative text-black">
                             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} aria-hidden="true" />
