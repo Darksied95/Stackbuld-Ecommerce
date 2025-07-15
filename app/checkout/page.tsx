@@ -155,18 +155,18 @@ const Page = () => {
                         aria-label="Support contact options"
                     >
                         <a
-                            href="mailto:support@stackbuld.com"
+                            href="mailto:support@minicommerce.com"
                             className="text-slate-800 hover:underline focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 rounded"
                         >
-                            support@stackbuld.com
+                            support@minicommerce.com
                         </a>
                         <span className="hidden sm:inline text-gray-400" aria-hidden="true">|</span>
                         <a
-                            href="tel:1-800-STACKBULD"
+                            href="tel:1-800-MINICOMMERCE"
                             className="text-slate-800 hover:underline focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 rounded"
-                            aria-label="Call support at 1-800-STACKBULD"
+                            aria-label="Call support at 1-800-MINICOMMERCE"
                         >
-                            1-800-STACKBULD
+                            1-800-MINICOMMERCE
                         </a>
                         <span className="hidden sm:inline text-gray-400" aria-hidden="true">|</span>
                         <a
