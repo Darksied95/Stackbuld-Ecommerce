@@ -36,7 +36,7 @@ npm run dev
 
 ### Folder Structure
 
-.
+```bash
 ├── app
 │   ├── cart
 │   │   └── page.tsx
@@ -88,4 +88,4 @@ npm run dev
 ├── tailwind.config.ts
 ├── tsconfig.json
 └── types.ts
-# Stackbuld-Ecommerce
+```
