@@ -26,7 +26,7 @@ const Error = () => {
                         This is totally your fault...
                     </h2>
                     <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-                        Just kidding! It's definitely us. I'm looking into it , like right now.
+                        Just kidding! It&apos;s definitely us. I&apos;m looking into it , like right now.
                     </p>
                 </div>
 
@@ -54,7 +54,7 @@ const Error = () => {
                         aria-label="Retry the request"
                     >
                         <RefreshCw className="w-6 h-6 mr-3 group-hover:rotate-180 transition-transform duration-500" aria-hidden="true" />
-                        All good, let's try that again
+                        All good, let&apos;s try that again
                         <div className="absolute inset-0 rounded-2xl bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                     </button>
 
@@ -74,7 +74,7 @@ const Error = () => {
 
                 <div className="mt-8 p-4 bg-white rounded-xl border border-gray-200">
                     <p className="text-sm text-gray-500 italic">
-                        "I was going to blame you, but then I remembered I'm a professional... sort of" 🤷‍♂️
+                        I was going to blame you, but then I remembered I&apso;m a professional... sort of  🤷‍♂️
                     </p>
                 </div>
             </div>

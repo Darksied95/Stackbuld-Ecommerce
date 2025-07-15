@@ -7,7 +7,6 @@ import ProductsList from '@/components/Products';
 import { toast } from 'sonner';
 import { useCartStore } from '@/store/cart.store';
 import Image from 'next/image';
-import { notFound } from 'next/navigation';
 import Error from '@/components/Error';
 
 const renderStars = () => {

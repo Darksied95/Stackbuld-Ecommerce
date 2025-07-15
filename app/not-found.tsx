@@ -17,7 +17,7 @@ const Page = () => {
         return () => {
             clearTimeout(timer);
         }
-    }, [countdown]);
+    }, [countdown, router]);
 
     return (
         <main className="min-h-screen bg-white flex flex-col items-center justify-center px-4 py-8 mt-14">
@@ -52,7 +52,7 @@ const Page = () => {
                             <span className="inline-flex items-center justify-center w-8 h-8 bg-orange-500 text-white rounded-full font-bold text-sm">
                                 {countdown}
                             </span>
-                            {' '}seconds (you're welcome)
+                            {' '}seconds (you&apos;re welcome)
                         </p>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ import { useCartStore } from '@/store/cart.store';
 import { useGlobalSearch } from '@/store/search.store';
 import { Search, ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 
 const Header = () => {
     const itemsInCart = useCartStore(state => state.items);

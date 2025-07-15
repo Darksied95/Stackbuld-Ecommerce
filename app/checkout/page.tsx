@@ -19,7 +19,7 @@ const Page = () => {
 
     useEffect(() => {
         clearCart();
-    }, []);
+    }, [clearCart]);
 
     return (
         <div className='bg-white min-h-screen pt-20 text-black'>
@@ -88,7 +88,7 @@ const Page = () => {
                             </div>
                             <div className="text-left">
                                 <p className="font-medium text-slate-800">Order Confirmation</p>
-                                <p className="text-sm text-gray-600">You'll receive an email confirmation shortly</p>
+                                <p className="text-sm text-gray-600">You&apos;ll receive an email confirmation shortly</p>
                             </div>
                         </li>
                         <li className="flex items-center space-x-4">
@@ -112,7 +112,7 @@ const Page = () => {
                             </div>
                             <div className="text-left">
                                 <p className="font-medium text-slate-800">Shipping</p>
-                                <p className="text-sm text-gray-600">You'll receive tracking information once shipped</p>
+                                <p className="text-sm text-gray-600">You&apos;ll receive tracking information once shipped</p>
                             </div>
                         </li>
                     </ol>
