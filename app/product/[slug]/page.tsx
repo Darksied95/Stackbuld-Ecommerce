@@ -7,6 +7,8 @@ import ProductsList from '@/components/Products';
 import { toast } from 'sonner';
 import { useCartStore } from '@/store/cart.store';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
+import Error from '@/components/Error';
 
 const renderStars = () => {
     const rating = Math.floor(Math.random() * 5);
@@ -34,11 +36,12 @@ const ProductPage = ({ params: { slug } }: { params: { slug: string } }) => {
     const { data: productData, isPending, isError } = useGetProductById(slug);
 
     if (isPending) {
-        return <div>Loading...</div>
+        return <div className='text-white'>Loading...</div>
     }
 
     if (isError) {
-        return <div>Error</div>
+
+        return <Error />
     }
 
     const product = productData?.product

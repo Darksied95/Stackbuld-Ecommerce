@@ -3,14 +3,23 @@ import ProductCard from './ProductCard';
 import { useGetProducts } from '@/queries/products.queries';
 import { LoadingSkeleton } from './LoadingSkeleton';
 import { useGlobalSearch } from '@/store/search.store';
+import Error from './Error';
 
 const ProductsList = () => {
     const { data: products, isPending, isError } = useGetProducts();
     const searcKeyword = useGlobalSearch(state => state.keyword);
 
+    if (isError) {
+        return <Error />
+    }
+    if (products && products.length > 0) {
+        localStorage.setItem('products', JSON.stringify(products));
+    }
+
     const filteredProducts = (products || []).filter(product =>
         product.name.toLowerCase().includes(searcKeyword.toLowerCase())
     );
+
     return (
         isPending
             ? <LoadingSkeleton />
