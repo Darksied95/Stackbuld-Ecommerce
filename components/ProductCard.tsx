@@ -6,7 +6,7 @@ import Image from 'next/image';
 const ProductCard = ({ product }: { product: IProduct }) => {
 
     return (
-        <article key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+        <article key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all hover:scale-105   duration-300">
             <div className="aspect-square bg-gray-200 flex items-center justify-center" role="img" aria-label={`${product.name} product image`}>
                 <Image
                     src={product.image.url}
