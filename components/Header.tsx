@@ -2,13 +2,14 @@
 
 import { SITE_NAME } from '@/constants';
 import { useCartStore } from '@/store/cart.store';
+import { useGlobalSearch } from '@/store/search.store';
 import { Search, ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
 const Header = () => {
-    const [searchQuery, setSearchQuery] = useState('');
     const itemsInCart = useCartStore(state => state.items);
+    const { keyword, setKeyword } = useGlobalSearch(state => state);
 
     useEffect(() => {
         const cartState = localStorage.getItem('cart-storage');
@@ -43,11 +44,11 @@ const Header = () => {
                             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} aria-hidden="true" />
                             <input
                                 type="text"
-                                value={searchQuery}
-                                onChange={(e) => setSearchQuery(e.target.value)}
+                                value={keyword}
+                                onChange={(e) => setKeyword(e.target.value)}
                                 placeholder="Search products..."
                                 className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white text-sm"
-                                aria-label="Search products"
+                                aria-label="Search products..."
                             />
                         </div>
                     </div>
