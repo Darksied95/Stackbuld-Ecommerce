@@ -7,7 +7,10 @@ interface CartItem {
     name: string;
     price: number;
     quantity: number;
-    image: string;
+    image: {
+        url: string;
+        alt: string;
+    };
 }
 
 interface CartState {
@@ -17,8 +20,6 @@ interface CartState {
     decreaseItemQuantity: (itemId: string) => void;
     increaseItemQuantity: (itemId: string) => void;
     clearCart: () => void;
-    totalItems: number;
-    totalPrice: number;
 }
 
 export const useCartStore = create<CartState>()(
@@ -84,16 +85,18 @@ export const useCartStore = create<CartState>()(
 
             clearCart: () => set({ items: [] }),
 
-            get totalItems() {
-                return get().items.reduce((sum, item) => sum + item.quantity, 0);
-            },
+            // get totalItems() {
+            //     return get().items.reduce((sum, item) => sum + item.quantity, 0);
+            // },
 
-            get totalPrice() {
-                return get().items.reduce(
-                    (sum, item) => sum + item.price * item.quantity,
-                    0
-                );
-            },
+            // totalPrice: () => {
+            //     console.log(get().items, "items in cart");
+
+            //     return get().items.reduce(
+            //         (sum, item) => sum + item.price * item.quantity,
+            //         0
+            //     );
+            // },
         }),
         {
             name: 'cart-storage',
