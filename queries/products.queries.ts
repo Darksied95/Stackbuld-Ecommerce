@@ -6,7 +6,8 @@ export function useGetProductById(id: string) {
     return useQuery<{ product: IProduct }>({
         queryKey: ['product', id],
         queryFn: () => getProductById(id),
-        enabled: !!id
+        enabled: !!id,
+        retry: false
     })
 }
 
@@ -14,5 +15,6 @@ export function useGetProducts() {
     return useQuery<IProduct[]>({
         queryKey: ['products'],
         queryFn: getProducts,
+        retry: false,
     })
 }
