@@ -24,6 +24,7 @@ const renderStars = () => {
 };
 
 const stars = renderStars();
+
 const reviewersCount = Math.floor(Math.random() * 100)
 
 const ProductPage = ({ params: { slug } }: { params: { slug: string } }) => {
@@ -42,8 +43,8 @@ const ProductPage = ({ params: { slug } }: { params: { slug: string } }) => {
 
     const product = productData?.product
 
-    function handleAddToCart({ productName, quantity, id, price }: { productName: string, quantity: number, id: string, price: number }) {
-        addItemToCart({ id, name: productName, price }, quantity);
+    function handleAddToCart({ productName, quantity, id, price, image }: { productName: string, quantity: number, id: string, price: number, image: { url: string, alt: string } }) {
+        addItemToCart({ id, name: productName, price, image }, quantity);
         toast.success(`${productName} added to cart!`, {
             duration: 2000,
         });
@@ -110,7 +111,11 @@ const ProductPage = ({ params: { slug } }: { params: { slug: string } }) => {
                                     productName: product.name,
                                     quantity,
                                     id: product.id,
-                                    price: product.price_naira
+                                    price: product.price_naira,
+                                    image: {
+                                        url: product.image.url,
+                                        alt: product.image.alt
+                                    }
                                 })}
                             >
                                 ADD TO CART
